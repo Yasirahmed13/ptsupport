@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dosages &amp; Protocols — Primetime Research</title>
+  <meta name="description" content="Reconstitution, schedules and storage notes for every compound Primetime Research carries.">
+  <link rel="icon" type="image/png" href="images/logo-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="topbar">For laboratory research use only · Not for human consumption</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="Primetime Research home">
+        <img src="images/logo.png" alt="Primetime Research">
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="#" class="is-current" aria-current="page">Dosages &amp; Protocols</a>
+        <a href="#">Reconstitution Calculator</a>
+        <a href="#">Learn</a>
+        <a href="#support">Support</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#" class="btn btn-outline">Track order</a>
+        <a href="#" class="btn btn-primary">Shop</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="eyebrow">Reference library</div>
+        <h1>Dosages &amp; Protocols</h1>
+        <p class="lede">Reconstitution, schedules and storage notes for every compound we carry — the same reference our support team uses to answer your questions.</p>
+
+        <div class="search-row">
+          <label class="search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <span class="sr-only">Search protocols</span>
+            <input type="search" id="search" placeholder="Search by compound name…" autocomplete="off">
+          </label>
+          <div class="count" id="count" aria-live="polite">12 of 12 compounds</div>
+        </div>
+
+        <div class="chips" role="group" aria-label="Filter by category" id="chips">
+          <button type="button" class="chip" data-cat="all" aria-pressed="true">All</button>
+          <button type="button" class="chip" data-cat="recovery" aria-pressed="false">Recovery</button>
+          <button type="button" class="chip" data-cat="gh" aria-pressed="false">GH secretagogues</button>
+          <button type="button" class="chip" data-cat="cognitive" aria-pressed="false">Cognitive</button>
+          <button type="button" class="chip" data-cat="longevity" aria-pressed="false">Longevity</button>
+          <button type="button" class="chip" data-cat="skin" aria-pressed="false">Skin &amp; hair</button>
+          <button type="button" class="chip" data-cat="stack" aria-pressed="false">Stacks &amp; blends</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container library">
+      <div class="list" id="list">
+        <div class="group" data-group="single">
+          <div class="group-head">
+            <h2>Peptides</h2>
+            <span class="mono-muted group-count">(10)</span>
+          </div>
+          <div class="cards">
+            <button type="button" class="card" data-id="bpc157" data-cat="recovery" aria-pressed="true">
+              <span class="card-top"><span class="tag">Recovery</span><span class="tag tag-solid viewing">Viewing</span></span>
+              <span class="card-name">BPC-157</span>
+              <span class="card-blurb">Reconstitution, schedule, syringe units and storage.</span>
+              <span class="card-foot"><span class="mono-muted">Vial [__ mg]</span><span class="card-link">View protocol →</span></span>
+            </button>
+            <button type="button" class="card" data-id="tb500" data-cat="recovery" aria-pressed="false">
+              <span class="card-top"><span class="tag">Recovery</span><span class="tag tag-solid viewing">Viewing</span></span>
+              <span class="card-name">TB-500</span>
+              <span class="card-blurb">Reconstitution, loading and maintenance phases, storage.</span>
+              <span class="card-foot"><span class="mono-muted">Vial [__ mg]</span><span class="card-link">View protocol →</span></span>
+            </button>
+            <button type="button" class="card" data-id="ipa" data-cat="gh" aria-pressed="false">
+              <span class="card-top"><span class="tag">GH secretagogues</span><span class="tag tag-solid viewing">Viewing</span></span>
+              <span class="card-name">Ipamorelin</span>
+              <span class="card-blurb">Reconstitution, timing notes and storage.</span>
+              <span class="card-foot"><span class="mono-muted">Vial [__ mg]</span><span class="card-link">View protocol →</span></span>
+            </button>
+            <button type="button" class="card" data-id="cjc" data-cat="gh" aria-pressed="false">
+              <span class="card-top"><span class="tag">GH secretagogues</span><span class="tag tag-solid viewing">Viewing</span></span>
+              <span class="card-name">CJC-1295 (no DAC)</span>
+              <span class="card-blurb">Reconstitution, schedule and storage.</span>
+              <span class="card-foot"><span class="mono-muted">Vial [__ mg]</span><span class="card-link">View protocol →</span></span>
+            </button>
+            <button type="button" class="card" data-id="tesa" data-cat="gh" aria-pressed="false">
+              <span class="card-top"><span class="tag">GH secretagogues</span><span class="tag tag-solid viewing">Viewing</span></span>
+              <span class="card-name">Tesamorelin</span>
+              <span class="card-blurb">Reconstitution, schedule and storage.</span>
+              <span class="card-foot"><span class="mono-muted">Vial [__ mg]</span><span class="card-link">View protocol →</span></span>
+            </button>
+            <button type="button" class="card" data-id="semax" data-cat="cognitive" aria-pressed="false">
+              <span class="card-top"><span class="tag">Cognitive</span><span class="tag tag-solid viewing">Viewing</span></span>
+              <span class="card-name">Semax</span>
+              <span class="card-blurb">Preparation, schedule and storage.</span>
+              <span class="card-foot"><span class="mono-muted">Vial [__ mg]</span><span class="card-link">View protocol →</span></span>
+            </button>
+            <button type="button" class="card" data-id="selank" data-cat="cognitive" aria-pressed="false">
+              <span class="card-top"><span class="tag">Cognitive</span><span class="tag tag-solid viewing">Viewing</span></span>
+              <span class="card-name">Selank</span>
+              <span class="card-blurb">Preparation, schedule and storage.</span>
+              <span class="card-foot"><span class="mono-muted">Vial [__ mg]</span><span class="card-link">View protocol →</span></span>
+            </button>
+            <button type="button" class="card" data-id="epi" data-cat="longevity" aria-pressed="false">
+              <span class="card-top"><span class="tag">Longevity</span><span class="tag tag-solid viewing">Viewing</span></span>
+              <span class="card-name">Epitalon</span>
+              <span class="card-blurb">Reconstitution, cycle length and storage.</span>
+              <span class="card-foot"><span class="mono-muted">Vial [__ mg]</span><span class="card-link">View protocol →</span></span>
+            </button>
+            <button type="button" class="card" data-id="motsc" data-cat="longevity" aria-pressed="false">
+              <span class="card-top"><span class="tag">Longevity</span><span class="tag tag-solid viewing">Viewing</span></span>
+              <span class="card-name">MOTS-c</span>
+              <span class="card-blurb">Reconstitution, schedule and storage.</span>
+              <span class="card-foot"><span class="mono-muted">Vial [__ mg]</span><span class="card-link">View protocol →</span></span>
+            </button>
+            <button type="button" class="card" data-id="ghk" data-cat="skin" aria-pressed="false">
+              <span class="card-top"><span class="tag">Skin &amp; hair</span><span class="tag tag-solid viewing">Viewing</span></span>
+              <span class="card-name">GHK-Cu</span>
+              <span class="card-blurb">Reconstitution, schedule and storage.</span>
+              <span class="card-foot"><span class="mono-muted">Vial [__ mg]</span><span class="card-link">View protocol →</span></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="group" data-group="stack">
+          <div class="group-head">
+            <h2>Stacks &amp; Blends</h2>
+            <span class="mono-muted group-count">(2)</span>
+          </div>
+          <div class="cards">
+            <button type="button" class="card" data-id="wolverine" data-cat="stack" aria-pressed="false">
+              <span class="card-top"><span class="tag">Stacks &amp; blends</span><span class="tag tag-solid viewing">Viewing</span></span>
+              <span class="card-name">BPC-157 + TB-500 Blend</span>
+              <span class="card-blurb">Combined vial: reconstitution and schedule.</span>
+              <span class="card-foot"><span class="mono-muted">Vial [__ mg]</span><span class="card-link">View protocol →</span></span>
+            </button>
+            <button type="button" class="card" data-id="cjcipa" data-cat="stack" aria-pressed="false">
+              <span class="card-top"><span class="tag">Stacks &amp; blends</span><span class="tag tag-solid viewing">Viewing</span></span>
+              <span class="card-name">CJC-1295 + Ipamorelin Blend</span>
+              <span class="card-blurb">Combined vial: reconstitution and timing.</span>
+              <span class="card-foot"><span class="mono-muted">Vial [__ mg]</span><span class="card-link">View protocol →</span></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="empty" id="empty" hidden>No compounds match that search. Try another name, or <a href="#support">ask our support team</a>.</div>
+      </div>
+
+      <aside class="detail" aria-label="Protocol detail" id="detail">
+        <div class="detail-head">
+          <div class="detail-meta"><span id="d-cat">Recovery</span> · Vial [__ mg]</div>
+          <div class="detail-name" id="d-name">BPC-157</div>
+          <div class="detail-blurb" id="d-blurb">Reconstitution, schedule, syringe units and storage.</div>
+        </div>
+        <div class="detail-body">
+          <dl class="fields">
+            <div class="field">
+              <span class="field-num" aria-hidden="true">01</span>
+              <div><dt>Reconstitution</dt><dd>[BAC WATER VOLUME] bacteriostatic water per vial [ADD]</dd></div>
+            </div>
+            <div class="field">
+              <span class="field-num" aria-hidden="true">02</span>
+              <div><dt>Protocol</dt><dd>[AMOUNT PER ADMINISTRATION] [ADD]</dd></div>
+            </div>
+            <div class="field">
+              <span class="field-num" aria-hidden="true">03</span>
+              <div><dt>Syringe units (U-100)</dt><dd>[UNITS] [ADD]</dd></div>
+            </div>
+            <div class="field">
+              <span class="field-num" aria-hidden="true">04</span>
+              <div><dt>Schedule</dt><dd>[FREQUENCY · CYCLE LENGTH] [ADD]</dd></div>
+            </div>
+            <div class="field">
+              <span class="field-num" aria-hidden="true">05</span>
+              <div><dt>Storage</dt><dd>[LYOPHILIZED / RECONSTITUTED STORAGE] [ADD]</dd></div>
+            </div>
+          </dl>
+          <div class="detail-actions">
+            <a href="#" class="btn btn-primary">Open calculator</a>
+            <a href="#" class="btn btn-outline">Download PDF</a>
+          </div>
+          <p class="fineprint">Reference information for laboratory research only. Not medical advice.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="support" id="support">
+      <div class="container support-inner">
+        <div class="support-copy">
+          <div class="eyebrow eyebrow-light">Customer service</div>
+          <h2>Questions about an order or a protocol?</h2>
+          <p>Our team replies within [RESPONSE TIME], [SUPPORT HOURS].</p>
+        </div>
+        <div class="support-cards">
+          <a href="#" class="support-card">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg>
+            <span class="support-title">Live chat</span>
+            <span class="support-sub">Talk to a specialist now</span>
+          </a>
+          <a href="mailto:support@ptresearch.shop" class="support-card">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <span class="support-title">Email</span>
+            <span class="support-sub">support@ptresearch.shop</span>
+          </a>
+          <a href="#" class="support-card">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>
+            <span class="support-title">Order tracking</span>
+            <span class="support-sub">Shipping status &amp; returns</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo-row">
+          <div class="footer-mark"><img src="images/logo-mark.png" alt=""></div>
+          <div>
+            <div class="footer-name">Primetime Research</div>
+            <div class="footer-domain">ptresearch.shop</div>
+          </div>
+        </div>
+        <p>All products are sold strictly for in-vitro laboratory research. They are not drugs, foods or cosmetics and are not intended to diagnose, treat or prevent any disease.</p>
+      </div>
+      <div class="footer-cols">
+        <nav class="footer-col" aria-label="Library"><span>Library</span><a href="#">Protocols</a><a href="#">Calculator</a><a href="#">Learn</a></nav>
+        <nav class="footer-col" aria-label="Support"><span>Support</span><a href="#">Contact</a><a href="#">Shipping</a><a href="#">Returns</a></nav>
+        <nav class="footer-col" aria-label="Legal"><span>Legal</span><a href="#">Disclaimer</a><a href="#">Privacy</a><a href="#">Terms</a></nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
